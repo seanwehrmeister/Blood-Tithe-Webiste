@@ -6,38 +6,18 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
 
     <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_pack_tag 'application' %>
 
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class= "logo-wrapper">
+    <a href="/"><img src="https://i.imgur.com/b43DKXR.png" alt="BloodTithe"></a>
+  </div>
 
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/">BloodTithe</a></h1>
-      </li>
-    </ul>
-
-    <section class="Logo center section"
-    <ul class="center">
-      <li><<a href="https://imgur.com/b43DKXR"><img src="https://i.imgur.com/b43DKXR.png" title="source: imgur.com" /></a></li>
-    </ul>
-  </section>
-
-    <section class="top-bar-section">
-      <ul class="right">
-      <li><a>Tour</a>
-      </ul>
-    </section>
-  </nav>
-
-  <%- flash.each do |key, value| -%>
-    <div class="flash flash-<%= key %>">
-      <%= value %>
-    </div>
-  <%- end -%>
-
+<div class= "content">
   <%= yield %>
+</div>
 
   <%= javascript_include_tag 'application' %>
   <%= yield :extra_footer %>
