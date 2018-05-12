@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from '../components/AboutUs'
+import Music from '../components/Music'
 
 const HomePage = props => {
 
@@ -8,7 +8,7 @@ const HomePage = props => {
       <h1 className='index-title'></h1>
       <div className="main-row">
         <div className="columns small-12 medium-7 tile-background">
-          <AboutUs/>
+          <Music/>
         </div>
       </div>
     </div>
