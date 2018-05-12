@@ -7,13 +7,21 @@
 
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_pack_tag 'application' %>
+    <%= csrf_meta_tags %>
 
-  <%= csrf_meta_tags %>
 </head>
 <body>
   <div class= "logo-wrapper">
-    <a href="/"><img src="https://i.imgur.com/Cl72vdj.png" title="Blood Tithe Logo" /></a>
+    <a href="/"><img src="https://i.imgur.com/Cl72vdj.png" title="Blood Tithe Lo" /></a>
   </div>
+<div class= "nav-bar"
+  <ul>
+  <li><a href="music.asp">Music</a></li>
+  <li><a href="Merch.asp">Merch</a></li>
+  <li><a href="Tour.asp">Tour</a></li>
+  <li><a href="Contact.asp">Contact</a></li>
+</ul>
+</div>
 
 <div class= "content">
   <%= yield %>
