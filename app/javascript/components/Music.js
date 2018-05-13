@@ -1,15 +1,16 @@
 import React from 'react';
-import styles from './Music.css';
+import MusicTile from './MusicTile.js'
 
-const Music = props =>{
+
+
+const Music = props => {
 
   return (
-    <span className="body">
-      <p>About uss ahhhhhhh</p>
-    </span>
+    <MusicTile />
   )
 
-
 }
+
+
 
 export default Music;
